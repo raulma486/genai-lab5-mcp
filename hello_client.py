@@ -1,10 +1,10 @@
 import asyncio
 from fastmcp import Client
 
-async def main()
+async def main():
     client = Client("hello_server.py")
-    async with client
+    async with client:
         result = await client.call_tool("say_hello", {"name": "Facundo"})
         print(result)
 
-async.run(main())
+asyncio.run(main())
